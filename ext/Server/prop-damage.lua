@@ -49,7 +49,7 @@ NetEvents:Subscribe(NetMessage.C2S_PROP_DAMAGE, function(player, targetId)
 
 	-- Damage the target player and heal the one doing the damage.
 	local propDamage = DamageInfo()
-	propDamage.damage = 8
+	propDamage.damage = 30
 
 	targetPlayer.soldier:ApplyDamage(propDamage)
 
