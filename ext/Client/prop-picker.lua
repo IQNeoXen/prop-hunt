@@ -242,7 +242,10 @@ Events:Subscribe('Client:UpdateInput', function(delta)
 	-- If the player is pressing down the prop selection key do a
 	-- raycast to find a valid prop. We allow prop selection once every
 	-- 250ms to prevent lag.
-	if InputManager:IsKeyDown(InputDeviceKeys.IDK_E) and elapsedTime >= 0.25 then
+	-- if InputManager:IsKeyDown(InputDeviceKeys.IDK_E) and elapsedTime >= 0.25 then
+
+	-- remove lag prevention for testing
+	if InputManager:IsKeyDown(InputDeviceKeys.IDK_E) then
 		elapsedTime = 0.0
 
 		-- Find a prop to turn into!
